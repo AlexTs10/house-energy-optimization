@@ -1,0 +1,6 @@
+{"timestamp": "2023/02/19 20:59:16", "temperature": 21.32}
+{"timestamp": "2023/02/19 20:59:18", "temperature": 21.72}
+{"timestamp": "2023/02/19 20:59:26", "temperature": 22.13}
+{"timestamp": "2023/02/19 20:59:28", "temperature": 22.13}
+{"timestamp": "2023/02/19 20:59:36", "temperature": 21.8}
+{"timestamp": "2023/02/19 20:59:38", "temperature": 21.8}
