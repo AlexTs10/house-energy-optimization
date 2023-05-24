@@ -1,0 +1,134 @@
+<html>
+<head>
+    <title>Test page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="body"> 
+    <div class="top-div">
+    <div ><h1 class="home">HOME</h1></div>
+    <div style="display: flex;">
+        <div style="flex: 1;">
+            <div style="margin: 0 auto; width: 50%;">
+                <h2>On/Off</h2>
+                <label class="switch">
+                    <input type="checkbox" id="myCheckh" 
+                        onclick="turnonoff(0)">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+    <div style="flex: 1;">
+        <form action="#" onsubmit="schedule(0);return false">
+            <div class="time-wrapper">
+                <div>
+                    <label for="startTime0" class="time-label">
+                        Select time to turn Home On/Off 
+                    </label>
+                    <input id="startTime0" type="time" name="startTime0" required />
+                </div>
+                <div style="margin: 10 auto; width: 50%;">
+                    <input type="submit" class="schedule-button" value="Set Schedule" />
+                </div>
+            </div>
+        </form>
+    </div>
+    <div style="flex: 1;">
+        <div class="slidecontainer">
+            <p>Select Home temperature</p>
+            <input type="range" class="range80" min="16" max="34" value="23" id="slider0">
+            <p>Target Temp: <span id="select-temp0"></span> </p>
+        </div>
+    </div>
+    </div>
+    </div>
+    
+
+    
+
+    <div style="display: flex;">
+    <!-- Room 1-->
+    <div class="room-div" style="flex: 1;"> 
+        <div class="home"><h2>Room 1</h2></div>
+        <div class="grid1-container">
+            <div class="item11">
+                <p>
+                    <span id="get-temp1" class="get--temp1"></span> 
+                </p>            
+            </div>
+            <div class="item12">
+                <label class="switch">
+                    <input type="checkbox" id="myCheck1" onclick="turnonoff(1)">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="item13">
+                <form action="#" onsubmit="schedule(1);return false">
+                    <div class="time-wrapper">
+                    <div>
+                        <label for="startTime1" class="time-label">
+                            Select time to turn Room 1 On/Off 
+                        </label>
+                        <input id="startTime1" type="time" name="startTime1" required />
+                    </div>
+                    <div style="margin: 10 auto; width: 50%;">
+                        <input type="submit" class="schedule-button" value="Set Schedule" />
+                    </div>
+                    </div>
+                </form>
+            </div>
+            <div class="item14">
+                <div class="slidecontainer">
+                    <p>Select temperature</p>
+                    <input type="range" min="16" max="34" value="23" id="slider1">
+                    <p>Target Temp: <span id="select-temp1"></span> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <!-- Room 2-->
+    <div class="room-div" style="flex: 1;"> 
+    <div class="home"><h2>Room 2</h2></div>
+    <div class="grid-container">
+        <div class="item1"> 
+            <p>  
+                <span id="get-temp2" class="get--temp1"></span> 
+            </p>
+        </div>
+        <div class="item2">
+            <label class="switch">
+                <input type="checkbox" id="myCheck2" onclick="turnonoff(2)">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="item3">
+            <form action="#" onsubmit="schedule(2);return false">
+                <div class="time-wrapper">
+                    <div>
+                    <label for="startTime2" class="time-label">
+                        Select time to turn Room 2 On/Off 
+                    </label>
+                    <input id="startTime2" type="time" name="startTime2" required />
+                </div>
+                <div style="margin: 10 auto; width: 50%;">
+                    <input type="submit" class="schedule-button" value="Set Schedule" />
+                </div>
+                </div>
+            </form>
+        </div>
+        <div class="item4">
+            <div class="slidecontainer">
+                    <p>Select temperature</p>
+                    <input type="range" min="16" max="34" value="23" id="slider2">
+                    <p>Target Temp: <span id="select-temp2"></span> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="main.js"></script>
+</html>
